@@ -1,7 +1,12 @@
 .grid{
-    border: 1px solid #111;
     display: flex;
     flex-wrap: wrap;
-    height: 120px;
-    width: 140px;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
 }
