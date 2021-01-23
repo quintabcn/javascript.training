@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[currentLaserIndex].classList.remove('laser');
             currentLaserIndex -= width;
             squares[currentLaserIndex].classList.add('laser');
-            if(squares[currentLaserIndex].contains('invader')){
+            if(squares[currentLaserIndex].classList.contains('invader')){
                 squares[currentLaserIndex].classList.remove('laser');
                 squares[currentLaserIndex].classList.remove('invader');
                 squares[currentLaserIndex].classList.add('boom');
@@ -112,11 +112,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        document.addEventListener('keyup', e=> {
+/*         document.addEventListener('keyup', e=> {
             if (e.keyCode === 32) {
                 laserId =setInterval(moveLaser, 100)
             }
-        })
+        }) */
+
+        switch(e.keyCode){
+            case 32:
+                laserId= setInterval(moveLaser, 100);
+                break;
+        }
     }
 
     document.addEventListener('keyup', shoot);
