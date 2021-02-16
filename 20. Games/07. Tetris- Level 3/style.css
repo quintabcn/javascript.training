@@ -13,7 +13,7 @@ div{
 }
 
 .previous-grid{
-    height: 800px;
+    height: 80px;
     width: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +23,6 @@ div{
     height: 80px;
     width: 80px;
 }
-
 
 .block{
     background-color: blue;
